@@ -48,7 +48,7 @@ const getPrice = () => {
         })
 } 
 
-//getPrice() 
+getPrice() 
 
 laske_button.addEventListener('click',() => {
 calculate()
