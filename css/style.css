@@ -1,0 +1,63 @@
+body {
+    background-image: url("/images/sauna.jpg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .box {
+    position: relative;
+    max-width: 70%;
+    padding: 3%;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,.8);
+  }
+
+  .box h1 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 36px;
+    color:rgb(255, 217, 0);
+  }
+
+  .box form {
+    padding-top: 10px;
+  }
+
+  .box button {
+    margin-top: 10px;
+    padding: 10px 60px;
+    font-size: 14px;
+  }
+
+  #tulos {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    max-width: 50%;
+    padding: 2%;
+    margin-top: 10px;
+    background: rgba(235, 233, 216, 0.137);
+    box-shadow: 0 5px 15px rgba(0,0,0,.8);
+  }
+
+  th, td {
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  table {
+    max-width: 100%;
+    padding: 2%;
+    margin-top: 10px;
+    background: rgba(235, 233, 216, 0.137);
+    box-shadow: 0 5px 15px rgba(0,0,0,.8);
+  }
