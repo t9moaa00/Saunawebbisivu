@@ -2,7 +2,7 @@ const dateAndTimeNow = new Date();
 const year = dateAndTimeNow.getFullYear();
 const month = dateAndTimeNow.getMonth() + 1;
 const day = dateAndTimeNow.getDate();
-const hour = dateAndTimeNow.getHours() -2;
+let hour = dateAndTimeNow.getHours() -2;
 const hinta_span = document.querySelector('#hintanyt')
 const laske_button = document.querySelector('button')
 const tunnit_input = document.querySelector('#tunnit')
@@ -18,6 +18,7 @@ let hinta3 = 0
 let hinta4 = 0
 let hinta5 = 0
 let hinta6 = 0
+
 
 const twoDigits = (number) => (number < 10 ? `0${number}` : `${number}`);
 const params = `${year}-${twoDigits(month)}-${twoDigits(day)}T${twoDigits(hour)}:00:00.000Z`;
@@ -38,6 +39,12 @@ const getPrice = () => {
             let modattutunti = hour + 3
             for(let i = 1; i < 6; i++) {
                 let obj = json.prices[i];
+                const checkhour = () => {
+                    if(modattutunti === 24){
+                        modattutunti = 0
+                    }
+                    }
+                    checkhour()
                     document.getElementsByTagName("table")[0].innerHTML+= "<tr><td>"+modattutunti+".00"+"</td><td>"+json.prices[i].value +" snt/kWh"+"</td><td>"
                         modattutunti++
             }
