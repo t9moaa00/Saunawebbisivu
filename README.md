@@ -6,4 +6,6 @@ API-rajapinta on täysin ilmainen eikä vaadi rekisteröitymistä tai API-avaint
 
 Saunan keskimääräiset kulutukset on saatu harvian sivuilta: https://www.harvia.com/fi/ideat-ja-trendit/vastuullisuus/sahkosaunan-energiankulutus-tyypillinen-perhesauna-lampenee-2-eurolla/
 
+Sivun ulkoasu:
+
 ![Käyttöliittymän kuva](./images/saunaohjelmankuva.png)
