@@ -1,7 +1,7 @@
 const dateAndTimeNow = new Date()
 const year = dateAndTimeNow.getFullYear()
 const month = dateAndTimeNow.getMonth() + 1
-let day = dateAndTimeNow.getDate()
+const day = dateAndTimeNow.getDate()
 let hour = dateAndTimeNow.getHours() -2
 const hinta_span = document.querySelector('#hintanyt')
 const laske_button = document.querySelector('button')
