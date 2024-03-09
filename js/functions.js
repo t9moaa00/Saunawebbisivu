@@ -1,7 +1,7 @@
 const dateAndTimeNow = new Date()
 const year = dateAndTimeNow.getFullYear()
 const month = dateAndTimeNow.getMonth() + 1
-const day = dateAndTimeNow.getDate()
+let day = dateAndTimeNow.getDate()
 let hour = dateAndTimeNow.getHours() -2
 const hinta_span = document.querySelector('#hintanyt')
 const laske_button = document.querySelector('button')
@@ -25,9 +25,11 @@ const twoDigits = (number) => (number < 10 ? `0${number}` : `${number}`)
 const checktunti = () => {
     if(hour === -2){
         hour = 22
+        day = day -1
     }
     if(hour === -1){
         hour = 23
+        day = day -1
     }
 }
 
