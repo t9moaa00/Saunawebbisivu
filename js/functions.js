@@ -53,12 +53,15 @@ const getPrice = () => {
             for(let i = 1; i < 6; i++) {
                 let obj = json.prices[i];
                 const checkmodattu = () => {
-                    if(modattutunti > 24){
-                        modattutunti = 1
-                    }
                     if (modattutunti === 24) {
                         modattutunti = 0
                     } 
+                    if(modattutunti === 25){
+                        modattutunti = 1
+                    }
+                    if(modattutunti === 26){
+                        modattutunti = 2
+                    }
                     }
                     checkmodattu()
                     document.getElementsByTagName("table")[0].innerHTML+= "<tr><td>"+modattutunti+".00"+"</td><td>"+json.prices[i].value +" snt/kWh"+"</td><td>"
